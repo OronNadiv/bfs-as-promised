@@ -1,9 +1,10 @@
-#BFS as Promised — Promisified Breadth-First SearchFinder.
+#BFS as Promised — Promisified Breadth-First Search.
 
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
 [![Test Coverage][coveralls-image]][coveralls-url]
 [![Dependencies][dependencies-image]][dependencies-url]
+[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
 Asynchronous implementation of [BFS][bfs] to find the shortest path.  The implementation uses [Bluebird][bluebird]'s promise.  
 
@@ -72,11 +73,11 @@ E.g. for the following graph:
 2 -> 4
 4 -> 5
 ```
-Calling `find()` where start node is `1` and goal node is `5`, will return a promise that once resolved, it will returns `[1, 2, 4, 5]`.
-<br/>Calling `find()` where start node is `1` and goal node is `-1`, will return a promise that once resolved, it will returns `null`.
+Calling `find()` where start node is `1` and goal node is `5`, will return a promise that, once resolved, it will returns `[1, 2, 4, 5]`.
+<br/>Calling `find()` where start node is `1` and goal node is `-1`, will return a promise that, once resolved, it will returns `null`.
 
 ## License
-MIT
+[MIT](https://tldrlegal.com/license/mit-license)
 
 [npm-image]: https://img.shields.io/npm/v/bfs-as-promised.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/bfs-as-promised
