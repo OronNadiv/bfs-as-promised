@@ -1,11 +1,11 @@
 {
   "name": "bfs-as-promised",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Breadth-first search (BFS) using promise (Bluebird)",
   "main": "lib/bfs.js",
   "keywords": [
     "bfs",
-    "breadth first search ",
+    "breadth first search",
     "bluebird",
     "promise"
   ],
@@ -26,8 +26,8 @@
     "compile": "babel src --out-dir lib --source-maps --minified",
     "test-coveralls": "istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
     "cover": "istanbul cover _mocha --include-all-sources -x **/lib/**",
-    "lint": "eslint . --ignore-path .gitignore",
-    "test": "mocha"
+    "lint": "eslint src --ignore-path .gitignore",
+    "test": "mocha && npm run lint"
   },
   "devDependencies": {
     "babel-cli": "^6",
@@ -35,8 +35,8 @@
     "coveralls": "^2",
     "eslint": "^3",
     "eslint-config-standard": "^5",
-    "eslint-plugin-promise": "^1",
-    "eslint-plugin-standard": "^1",
+    "eslint-plugin-promise": "^2",
+    "eslint-plugin-standard": "^2",
     "istanbul": "^0.4",
     "mocha": "^2",
     "should": "^9"
