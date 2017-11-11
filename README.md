@@ -4,7 +4,7 @@
 [![Build Status][travis-image]][travis-url]
 [![Test Coverage][coveralls-image]][coveralls-url]
 [![Dependencies][dependencies-image]][dependencies-url]
-[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+[![JavaScript Style Guide][standard-image]][standard-url]  
 
 Asynchronous implementation of [BFS][bfs] to find the shortest path.  The implementation uses [Bluebird][bluebird]'s promise.  
 
@@ -91,3 +91,6 @@ Calling `find()` where start node is `1` and goal node is `5`, will return a pro
 [bluebird]: https://www.npmjs.org/package/bluebird
 [bfs]: https://en.wikipedia.org/wiki/Breadth-first_search
 [map]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map
+
+[standard-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg
+[standard-url]: http://standardjs.com
